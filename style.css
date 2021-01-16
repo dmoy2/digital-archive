@@ -1,3 +1,6 @@
+/* Author: Derek Moy */
+/*https://github.com/dmoy2/digital-archive*/
+
 /* Global Selectors */
 
 header {
@@ -88,4 +91,3 @@ img {
     box-shadow: 25px 25px #b9beeb;
     grid-area: 2 / 14 / span 10 / span 5;
 }
-
