@@ -1,0 +1,91 @@
+/* Global Selectors */
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    background-color: #ebcdb9;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.title {
+    width: 90%;
+    font-weight: 300;
+}
+
+header .navbar {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.heading {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    color: black;
+    background-color: whitesmoke;
+    min-width: 1100px;
+}
+.content {
+    margin: 50px;
+    font-size: 15px;
+}
+
+a {
+    color: black;
+    transition: color 300ms linear;
+}
+
+a:hover{
+    color: white;
+}
+
+
+.intro {
+    margin: 0 50px;
+}
+
+.about {
+    display: grid;
+    margin: 0 50px;
+
+    grid-template: repeat(15, 1fr) / repeat(20, 1fr);
+    height: 500px;
+    max-height: 500px;
+    width: auto;
+    max-width: auto;
+    overflow: auto;
+
+}
+
+.text {
+    grid-area: 1 / 2 / span 15 / span 11;
+    z-index: 1;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 25px 25px #b9beeb;
+    grid-area: 2 / 14 / span 10 / span 5;
+}
+

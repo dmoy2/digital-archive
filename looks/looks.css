@@ -1,0 +1,158 @@
+/* Global Selectors */
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    background-color: #ebcdb9;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.title {
+    width: 90%;
+    font-weight: 300;
+}
+
+header .navbar {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.heading {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    color: black;
+    background-color: whitesmoke;
+    min-width: 1100px;
+}
+
+.content {
+    padding: 50px;
+    font-size: 15px;
+}
+
+.intro {
+    margin: auto 50px;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    color: black;
+    transition: color 300ms linear;
+}
+
+a:hover{
+    color: white;
+}
+
+.pic-item img {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    box-shadow: 10px 10px #b9beeb;
+}
+
+.pic-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    flex-direction: row;
+    flex: 1 1;
+    max-width: 1100px;
+}
+
+.pic-item {
+    position: relative;
+    height: 200px;
+    margin: 20px;
+}
+
+.row {
+    display: inline-flex;
+}
+
+.pic-item .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: rgba(245, 245, 245, .8);
+    width: 100%;
+    height: 0;
+    transition: 300ms ease-in;
+}
+
+.pic-item:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.pic-item .caption {
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.pic-item .caption p{
+    margin: 0;
+}
+
+.caption::before {
+    content: "📍";
+}
+
+/* Back to Top Button*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #b9beeb;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #ebcdb9;
+    transition: 300ms linear;
+}

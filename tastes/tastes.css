@@ -1,0 +1,261 @@
+/* Global Selectors */
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    background-color: #ebcdb9;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.title {
+    width: 90%;
+    font-weight: 300;
+}
+
+header .navbar {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.heading {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    color: black;
+    background-color: whitesmoke;
+    min-width: 1100px;
+}
+
+.content {
+    padding: 50px;
+    font-size: 15px;
+}
+
+.intro {
+    margin: auto 50px;
+}
+
+a {
+    color: black;
+    transition: color 300ms linear;
+}
+
+a:hover{
+    color: white;
+}
+
+.yelp:hover {
+    color: #d29e7c;
+}
+
+.subtitle {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}
+
+.container {
+    width: auto;
+    max-width: 1400px;
+    height: auto;
+    margin: 50px auto 0 auto;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    min-width: 900px;
+    max-width: 1400px;
+    height: 2000px;
+    margin: auto;
+    grid-template: repeat(50, 1fr) / repeat(30, 1fr);
+}
+
+.colorblock {
+    background-color: #b9beeb;
+    opacity: 0.7;
+}
+
+.suggestion {
+    margin: 5px 0px 0px 20px;
+}
+
+.suggestion:before {
+    content: "\2665 \020";
+}
+
+.subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.list ul {
+    margin: auto;
+    width: 324px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list li {
+    margin: 15px 0
+}
+
+.list a {
+    text-decoration: none;
+}
+
+li:before {
+    content: "📍";
+}
+
+.content a::after{
+    content: " 🔗";
+    font-size: 8px;
+}
+
+/* Coffee Section */
+.home {
+    grid-area: 1 / 9 / span 5 / span 6;
+    z-index: 1
+}
+
+.breadbelly {
+    grid-area: 5 / 5 / span 5 / span 6;
+    z-index: 2;
+}
+
+.andytown {
+    grid-area: 9 / 9 / span 6 / span 6;
+    z-index: 3;
+}
+
+.andytown img {
+    height: 220px;
+}
+
+.coffeepics {
+    grid-area: 2 / 7 / span 11 / span 5;
+    z-index: 0;
+}
+
+.coffee {
+    grid-area: 2 / 17 / span 9 / span 10;
+    z-index: 1;
+}
+
+
+/* Brunch Section */
+.brendas {
+    grid-area: 15 / 17 / span 7 / span 6;
+    z-index: 3;
+}
+
+
+.padrecito {
+    grid-area: 20 / 20 / span 5 / span 7;
+    z-index: 2;
+}
+
+.padrecito img {
+    width: 250px;
+    height: 200px;
+}
+
+.sweetmaple {
+    grid-area: 23 / 17 / span 7 / span 6;
+    z-index: 1;
+}
+
+.brunchpics {
+    grid-area: 17 / 19 / span 10 / span 6;
+    z-index: 0;
+}
+
+.brunch {
+    grid-area: 16 / 5 / span 9 / span 10;
+    z-index: 1;
+}
+
+/* Dinner Section */
+.souvla {
+    grid-area: 29 / 5 / span 7 / span 5;
+    z-index: 1;
+}
+
+.burma {
+    grid-area: 35 / 9 / span 7 / span 5;
+    z-index: 2;
+}
+
+.santung {
+    grid-area: 39 / 5 / span 7 / span 5;
+    z-index: 3;
+}
+
+.arias {
+    grid-area: 44 / 9 / span 6 / span 7;
+    z-index: 4;
+}
+
+.arias img {
+    width: 240px;
+    height: 260px;
+}
+
+.dinnerpics {
+    grid-area: 31 / 7 / span 18 / span 6;
+    z-index: 0;
+}
+
+.dinner {
+    grid-area: 33 / 17 / span 10 / span 10;
+    z-index: 1;
+}
+
+/* Back to Top Button*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #b9beeb;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #ebcdb9;
+    transition: 300ms linear;
+}
